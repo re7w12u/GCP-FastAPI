@@ -85,7 +85,8 @@ jobs:
 
       - name: Show Output
         run: echo ${{ steps.auth.outputs.access_token }}
-
+      - name: Show Output 2
+        run: echo ${{ steps.auth }}
 
       # Authenticate Docker to Google Cloud Artifact Registry
       - name: Docker Auth
